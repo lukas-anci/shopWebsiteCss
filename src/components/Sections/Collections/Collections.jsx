@@ -1,5 +1,5 @@
 import css from './Collections.module.css';
-import CollecionItem from '../CollectionItem';
+import CollecionItem from './CollectionItem';
 
 const collectionsData = [
   {
