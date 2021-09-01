@@ -1,5 +1,17 @@
+.cat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
 .cat a {
   display: block;
+  padding: 5px 5px;
+}
+.cat a:hover {
+  background-color: rgb(218, 214, 214);
+}
+.cat a::first-letter {
+  text-transform: uppercase;
 }
 .dash {
   height: 0.5px;

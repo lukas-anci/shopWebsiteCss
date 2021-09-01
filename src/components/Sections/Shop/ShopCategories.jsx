@@ -17,11 +17,16 @@ export default function ShopCategories() {
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get(
-        'https://fakestoreapi.com/products/categories'
-      );
-      console.log(data);
-      setCategories(data);
+      try {
+        const { data } = await axios.get(
+          'https://fakestoreapi.com/products/categories'
+        );
+        // console.log(data);
+        if (!data) throw new Error('No data came from request');
+        setCategories(data);
+      } catch (error) {
+        console.log(error);
+      }
     })();
   }, []);
   return (
