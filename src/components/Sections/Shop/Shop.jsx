@@ -4,6 +4,7 @@ import css from './Shop.module.css';
 
 export default function Shop() {
   return (
+    // useHttp hook
     <section className={`container ${css.shop}`}>
       <ShopCategories />
       <main>
