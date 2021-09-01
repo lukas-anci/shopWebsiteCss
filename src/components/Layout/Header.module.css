@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  color: snow;
+  background-color: transperent;
+  transition: all 0.3s ease-in;
+  margin-top: 0.6rem;
+}
+
+.header:hover {
+  background-color: white;
+  color: #333;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.main-nav a {
+  padding: 1rem 0.5rem;
+}
+
+.side-nav a {
+  padding: 1rem 0.5rem;
+}
